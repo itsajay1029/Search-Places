@@ -20,8 +20,10 @@ function getGeocode(str){
         let output=`
         <div class="carder">
          <div class="header">No Records Found <span class="smaller">(-)<span></div>
-         <div class="smaller"><i>Lattitude : NA</i></div>
-         <div class="smaller" style="float:right"><i>Longitude : NA</i></div>
+         <div class="flexing">
+         <div class="smaller"><i>Latitude : NA</i></div>
+         <div class="smaller"><i>Longitude : NA</i></div>
+         </div>
         </div>
     `
     results.innerHTML=output;
@@ -35,8 +37,10 @@ function getGeocode(str){
     let output=`
         <div class="carder">
          <div class="header">${placeName} <span class="smaller">(${type})<span></div>
-         <div class="smaller"><i>Lattitude : ${lat}<i></div>
-         <div class="smaller" style="float:right"><i>Longitude : ${long}</i></div>
+         <div class="flexing">
+         <div class="smaller"><i>Latitude : ${lat}<i></div>
+         <div class="smaller" ><i>Longitude : ${long}</i></div>
+         </div>
         </div>
     `
     results.innerHTML=output;
@@ -45,9 +49,7 @@ function getGeocode(str){
 
 
 })
-.catch(err => {
-	console.error(err);
-});
+
 }
 const search=document.getElementById('search');
 
@@ -60,8 +62,10 @@ document.getElementById('btn-1').addEventListener('click',(e)=>{
         let output=`
         <div class="carder">
          <div class="header">Please Enter the fields <span class="smaller">(-)<span></div>
-         <div class="smaller"><i>Lattitude : NA</i></div>
-         <div class="smaller" style="float:right"><i>Longitude : NA</i></div>
+         <div class="flexing">
+         <div class="smaller"><i>Latitude : NA</i></div>
+         <div class="smaller"><i>Longitude : NA</i></div>
+         </div>
         </div>
     `
     results.innerHTML=output;
