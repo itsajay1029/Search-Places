@@ -19,7 +19,7 @@
     margin-top: 30px;
     border: 2px solid rgba(82, 76, 76,50%);
     width: 100%;
-    height: 80px;
+    height: auto;
     border-radius: .25rem;
     padding: 0;
 }
@@ -28,7 +28,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 50px;
+    height: 80%;
     background-color:rgba(82, 76, 76,50%) ;
     padding: 0;
     margin: 0;
@@ -38,12 +38,17 @@
     font-family: 'Spartan', sans-serif;
     transition: 0.5s;
 }
+.flexing{
+    display: flex;
+    justify-content: space-between;
+}
 
 .smaller{
-    font-size: small;
-    display: inline;
-    padding-left: 8px;
-    padding-right: 8px;
+    font-size: 70%;
+    width: auto;
+    height: 100%;
+    margin: 0;
+    padding: 10px;
     transition: 0.5s;
 }
 
